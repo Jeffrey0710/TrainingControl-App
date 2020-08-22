@@ -3,4 +3,13 @@
 
     <string name="btn_addbutton">ADD</string>
 
+    <string name="txt_date">DATE:</string>
+    <string name="tv_select_date"><u>Select a Date</u></string>
+    <string name="txt_activities">ACTIVITIES:</string>
+    <string name="noButton">-------------</string>
+    <string name="tv_preview">Preview:</string>
+
+
+    <string name="description">Description</string>
+
 </resources>
