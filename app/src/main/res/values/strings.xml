@@ -1,15 +1,19 @@
 <resources>
     <string name="app_name">Training Control-App</string>
-
+    //BaseActivity
     <string name="btn_addbutton">ADD</string>
 
+    //AddActivity
     <string name="txt_date">DATE:</string>
     <string name="tv_select_date"><u>Select a Date</u></string>
     <string name="txt_activities">ACTIVITIES:</string>
     <string name="noButton">-------------</string>
+    <string name="txt_space">  </string>
     <string name="tv_preview">Preview:</string>
+    <string name="tv_reps">Reps:</string>
+    <string name="btn_ok_add">Ok</string>
 
-
+    //Other
     <string name="description">Description</string>
 
 </resources>

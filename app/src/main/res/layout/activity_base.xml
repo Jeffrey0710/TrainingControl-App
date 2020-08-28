@@ -3,16 +3,17 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:background="@android:color/black"
     android:gravity="top"
     android:padding="32dp"
+    android:orientation="vertical"
     tools:context=".BaseActivity">
 
     <Button
         android:id="@+id/btn_addbutton"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
         android:background="@drawable/btn_add"
         android:contentDescription="@string/app_name"
@@ -24,6 +25,66 @@
 
     </Button>
 
+    <EditText
+        android:id="@+id/edt_add1"
+        android:layout_width="354dp"
+        android:layout_height="738dp"
+        android:layout_weight="1"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine" />
 
+    <EditText
+        android:id="@+id/edt_add2"
+        android:layout_width="354dp"
+        android:layout_height="738dp"
+        android:layout_weight="1"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine" />
 
+    <EditText
+        android:id="@+id/edt_add3"
+        android:layout_width="354dp"
+        android:layout_height="738dp"
+        android:layout_weight="1"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine" />
+
+    <EditText
+        android:id="@+id/edt_add4"
+        android:layout_width="354dp"
+        android:layout_height="738dp"
+        android:layout_weight="1"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine" />
+
+    <EditText
+        android:id="@+id/edt_add5"
+        android:layout_width="354dp"
+        android:layout_height="738dp"
+        android:layout_weight="1"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine" />
+
+    <EditText
+        android:id="@+id/edt_add6"
+        android:layout_width="354dp"
+        android:layout_height="738dp"
+        android:layout_weight="1"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine" />
+
+    <EditText
+        android:id="@+id/edt_add7"
+        android:layout_width="354dp"
+        android:layout_height="738dp"
+        android:layout_weight="1"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine" />
 </LinearLayout>
