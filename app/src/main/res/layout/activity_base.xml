@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -12,8 +12,8 @@
 
     <Button
         android:id="@+id/btn_addbutton"
-        android:layout_width="350dp"
-        android:layout_height="wrap_content"
+        android:layout_width="299dp"
+        android:layout_height="36dp"
         android:layout_marginBottom="16dp"
         android:background="@drawable/btn_add"
         android:contentDescription="@string/app_name"
@@ -25,66 +25,100 @@
 
     </Button>
 
-    <EditText
-        android:id="@+id/edt_add1"
-        android:layout_width="354dp"
-        android:layout_height="738dp"
-        android:layout_weight="1"
-        android:ems="10"
-        android:gravity="start|top"
-        android:inputType="textMultiLine" />
+    <ScrollView
+        android:layout_width="350dp"
+        android:layout_height="768dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
 
-    <EditText
-        android:id="@+id/edt_add2"
-        android:layout_width="354dp"
-        android:layout_height="738dp"
-        android:layout_weight="1"
-        android:ems="10"
-        android:gravity="start|top"
-        android:inputType="textMultiLine" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
-    <EditText
-        android:id="@+id/edt_add3"
-        android:layout_width="354dp"
-        android:layout_height="738dp"
-        android:layout_weight="1"
-        android:ems="10"
-        android:gravity="start|top"
-        android:inputType="textMultiLine" />
+            <TextView
+                android:id="@+id/textViewData"
+                android:layout_width="354dp"
+                android:layout_height="138dp"
+                android:text="@string/description" />
 
-    <EditText
-        android:id="@+id/edt_add4"
-        android:layout_width="354dp"
-        android:layout_height="738dp"
-        android:layout_weight="1"
-        android:ems="10"
-        android:gravity="start|top"
-        android:inputType="textMultiLine" />
+            <EditText
+                android:id="@+id/edt_add1"
+                android:layout_width="354dp"
+                android:layout_height="138dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:gravity="start|top"
+                android:inputType="textMultiLine"
+                android:autofillHints=""
+                tools:ignore="LabelFor"/>
 
-    <EditText
-        android:id="@+id/edt_add5"
-        android:layout_width="354dp"
-        android:layout_height="738dp"
-        android:layout_weight="1"
-        android:ems="10"
-        android:gravity="start|top"
-        android:inputType="textMultiLine" />
+            <EditText
+                android:id="@+id/edt_add2"
+                android:layout_width="354dp"
+                android:layout_height="138dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:gravity="start|top"
+                android:inputType="textMultiLine"
+                android:autofillHints=""
+                tools:ignore="LabelFor"/>
 
-    <EditText
-        android:id="@+id/edt_add6"
-        android:layout_width="354dp"
-        android:layout_height="738dp"
-        android:layout_weight="1"
-        android:ems="10"
-        android:gravity="start|top"
-        android:inputType="textMultiLine" />
+            <EditText
+                android:id="@+id/edt_add3"
+                android:layout_width="354dp"
+                android:layout_height="138dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:gravity="start|top"
+                android:inputType="textMultiLine"
+                android:autofillHints=""
+                tools:ignore="LabelFor"/>
 
-    <EditText
-        android:id="@+id/edt_add7"
-        android:layout_width="354dp"
-        android:layout_height="738dp"
-        android:layout_weight="1"
-        android:ems="10"
-        android:gravity="start|top"
-        android:inputType="textMultiLine" />
-</LinearLayout>
+            <EditText
+                android:id="@+id/edt_add4"
+                android:layout_width="354dp"
+                android:layout_height="138dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:gravity="start|top"
+                android:inputType="textMultiLine"
+                android:autofillHints=""
+                tools:ignore="LabelFor"/>
+
+            <EditText
+                android:id="@+id/edt_add5"
+                android:layout_width="354dp"
+                android:layout_height="138dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:gravity="start|top"
+                android:inputType="textMultiLine"
+                android:autofillHints=""
+                tools:ignore="LabelFor"/>
+
+            <EditText
+                android:id="@+id/edt_add6"
+                android:layout_width="354dp"
+                android:layout_height="138dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:gravity="start|top"
+                android:inputType="textMultiLine"
+                android:autofillHints=""
+                tools:ignore="LabelFor"/>
+
+            <EditText
+                android:id="@+id/edt_add7"
+                android:layout_width="354dp"
+                android:layout_height="138dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:gravity="start|top"
+                android:inputType="textMultiLine"
+                android:autofillHints=""
+                tools:ignore="LabelFor" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

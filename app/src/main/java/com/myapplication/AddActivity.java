@@ -20,7 +20,9 @@ public class AddActivity extends AppCompatActivity implements View.OnClickListen
     TextView insert_date, tv_date, number;
     ImageButton numberPicker;
     Calendar mCurrentDate;
-    int day, month, year, data;
+    int day, month, year;
+    static int data;
+    static TextView data_show;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -58,6 +60,7 @@ public class AddActivity extends AppCompatActivity implements View.OnClickListen
         number = (TextView)findViewById(R.id.tv_reps);
         numberPicker = (ImageButton)findViewById(R.id.imageButton3);
         numberPicker.setOnClickListener(this);
+
     }
 
 
@@ -235,6 +238,8 @@ public class AddActivity extends AppCompatActivity implements View.OnClickListen
     }
 
     public void sendData(View view){
-        Toast.makeText(this, "Valor a enviar: "+ data, Toast.LENGTH_LONG).show();
+        data_show = (TextView)findViewById(R.id.textViewData);
+        data_show.setText(data);
+        finish();
     }
 }
